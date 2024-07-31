@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+main {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.user_info {
+    width: 100%;
+    cursor: default;
+    user-select: none;
+    margin-bottom: 45px;
+}
+
+.title {
+    font-size: 1.5em;
+    padding: 32px 0 15px 25px;
+}
+
+.user_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.profile_area {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 212px;
+    border-radius: 15px;
+    background-color: #59B9FF;
+    box-shadow: 4px 4px 10px #00000040;
+    padding: 20px 25px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.profile h4 {
+    font-size: 0.875em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.user_name {
+    display: flex;
+    gap: 10px;
+}
+
+.user_name h3 {
+    font-size: 2em;
+    color: #fff;
+}
+
+.rank_expiration_date_container div {
+    display: flex;
+    font-size: 0.8em;
+    color: #fff;
+}
+
+.profile_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vip_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25em;
+    color: #59B9FF;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.profile_right button {
+    width: 64px;
+    height: 28px;
+    color: #59B9FF;
+    font-weight: 600;
+    background-color: #fff;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+.user_resources {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 1075px;
+    height: 212px;
+    background-color: #fff;
+    border-radius: 15px;
+    border: 1px solid #999;
+    box-shadow: 4px 4px 10px #00000040;
+    padding: 20px 0;
+}
+
+.user_resources div {
+    display: flex;
+    font-size: 1.25em;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 310px;
+    height: 100%;
+}
+
+.coupon {
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+}
+
+.delivery_info {
+    display: flex;
+    justify-content: space-around;
+    width: 1440px;
+}
+
+.delivery_item_container_notDeposit,
+.delivery_item_container,
+.delivery_cancel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery_state_notDeposit,
+.delivery_state,
+.delivery_state_cancel {
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.delivery_state_notDeposit {
+    color: #999999;
+}
+
+.delivery_state {
+    color: #1697f3;
+}
+
+.delivery_state_cancel {
+    color: #FF8B59;
+}
+
+.frame_notDeposit,
+.frame,
+.frame_cancel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 50px;
+}
+
+.frame_notDeposit {
+    border: 2px solid #999999;
+    color: #999999;
+    box-shadow: 0px 0px 15px #999999;
+}
+
+.frame {
+    border: 2px solid #59B9FF;
+    color: #59b9ff;
+    box-shadow: 0px 0px 15px #59B9FF;
+}
+
+.frame_cancel {
+    border: 2px solid #FF8B59;
+    color: #FF8B59;
+    box-shadow: 0px 0px 15px #FF8B59;
+}
+
+.arrow {
+    display: flex;
+    align-items: center;
+    transform: translateY(-20px);
+}
+
+.line {
+    width: 20px;
+    height: 0.5px;
+    border: 0.5px dashed #59B9FF;
+}
+
+.arrow_head {
+    width: 0;
+    height: 0;
+    border-bottom: 7px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 10px solid #59B9FF;
+    border-right: 10px solid transparent;
+    margin-left: 10px;
+}
+
+.gap {
+    width: 70px;
+}
+
+.order_list_container .title {
+    border-bottom: 1px solid #999999;
+}
+
+.order_date {
+    padding: 5px 0 5px 25px;
+}
+
+.order_item_info_container {
+    display: flex;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin-bottom: 5px;
+}
+
+.item_photo {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 10px 50px 10px 25px;
+}
+
+.item_photo img {
+    width: 100%;
+    height: 100%;
+}
+
+.item_info_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.item_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 130px;
+    margin: 10px 0;
+}
+
+.item_name {
+    color: #000;
+}
+
+.serial_number,
+.price_area,
+.item_name_price_container div {
+    display: flex;
+}
+
+.serial_number {
+    font-weight: bold;
+}
+
+.selected_option,
+.item_numbers {
+    font-size: 0.8em;
+    color: #999999;
+}
+
+.price_area {
+    font-weight: bold;
+}
+
+.benefit_and_delivery_process {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 190px;
+    margin: 15px 50px 15px 0;
+    text-align: center;
+}
+
+.benefit_and_delivery_process div:not(.saving_point_text) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.saving_point_area div {
+    display: flex;
+}
+
+.saving_point_text,
+.delivery_porcess_link,
+.detail_link {
+    transform: translateY(-120%);
+}
+
+.benefit_and_delivery_process_title  {
+    font-weight: bold;
+}
+
+.move_page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0;
+    border-top: 1px solid #999;
+    padding-top: 20px;
+}
+
+.move_page a {
+    text-decoration: none;
+    color: #999;
+    padding: 20px;
+}
+
+.move_page a:hover {
+    color: #0079e9;
+    font-weight: bold;
+}
+
+.page_list ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.delivery_porcess_link,
+.detail_link{
+    color: #999;
+    font-size: 0.9em;
+}
+.delivery_porcess_link:hover,
+.detail_link:hover{
+    color: #0079e9;
+}
