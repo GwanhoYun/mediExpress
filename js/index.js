@@ -95,7 +95,7 @@ function showSlide(slideIndex) {
             countDiv.style.backgroundColor = '#0079e9'; //연한 하늘색이에요
         }   
     });
-    if(showSlideIndex === 1){ // 현재 인댁스의 페이지네이션 도트 색상이에요
+    if(showSlideIndex === 1){ // 현재 인덱스의 페이지네이션 도트 색상이에요
         document.querySelector('.count_'+ slideIndex).style.backgroundColor = '#000'; // 완전 검은색이에요
     }else{
         document.querySelector('.count_'+ slideIndex).style.backgroundColor = '#fff'; // 완전 흰색이에요
@@ -105,7 +105,7 @@ function showSlide(slideIndex) {
 totalSlideIndexCount.textContent = lastSlide; //마지막 슬라이드의 번호를 보여줘요
 
 function nextSlide() { //다음 슬라이드를 수동으로 넘기는 버튼의 onclick 이벤트에요
-    showSlideIndex = showSlideIndex === lastSlide ? 1 : showSlideIndex + 1; //현재 슬라이드 인덱스를 업데이트해요 마지막 슬라이드면 1로 돌아가고 아니면 인덱스를 +1해요
+    showSlideIndex = showSlideIndex === lastSlide ? 1 : showSlideIndex + 1; // 현재 슬라이드 인덱스를 업데이트해요 마지막 슬라이드면 1로 돌아가고 아니면 인덱스를 +1해요
     showSlide(showSlideIndex); // 그 다음 슬라이드를 실행해요
     resetAutoSlide(); // 자동으로 슬라이드 넘기는 5초 쿨타임을 초기화해요
 }
